@@ -1,12 +1,5 @@
-import os
 from flask import Flask
-
 from .views import app
-from . import models
-
-# Connect sqlalchemy to app
-models.db.init_app(app)
-
-@app.cli.command()
-def init_db():
-    models.init_db()
+from .utils.parser import Parser
+from .utils.googleapi import GoogleApi
+from .utils.mediawiki import MediaWiki
