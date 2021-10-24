@@ -1,11 +1,10 @@
 import os
 
-# To generate a new secret key:
-# >>> import random, string
-# >>> "".join([random.choice(string.printable) for _ in range(24)])
-SECRET_KEY = "d556a438ff158244c79578249d92db3f"
+# Configurations for the Website
+GOOGLE_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+WIKI_SEARCH_URL = "https://fr.wikipedia.org/w/api.php"
 
-FB_APP_ID = 1046638056142365
+# Define the API Key in your server config 
+GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+
