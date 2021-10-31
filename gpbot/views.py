@@ -11,6 +11,7 @@ app.config.from_object('config')
 def index():
     return render_template('index.html')
 
+
 @app.route('/grandpy/', methods=['POST'])
 def grandpy():
     grandpy = Grandpy()

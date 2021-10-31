@@ -6,4 +6,5 @@ venv
 app.db
 geckodriver.log
 .idea
-.flaskenv
+npm-debug.log
+config.py
