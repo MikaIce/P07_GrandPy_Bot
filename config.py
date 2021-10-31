@@ -1,6 +1,6 @@
 import os
 
-GOOGLE_API_KEY="AIzaSyBJBC0XAIGzQl9-As_nw5sTI2exAk0igzM"
+GOOGLE_API_KEY=""
 # Configurations for the Website
 GOOGLE_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
 WIKI_SEARCH_URL = "https://fr.wikipedia.org/w/api.php"
