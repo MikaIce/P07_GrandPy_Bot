@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="icon" type="image/png" href="/static/img/logor.png" />
+    <title>GrandPy Bot</title>
+</head>
+
+<body>
+    <header>
+        <div id="main_title">
+            <div id=logo>
+                <h1>GrandPy Bot</h1>
+                <img src="/static/img/rickp.png" alt="logo " id="Rick">
+            </div>
+        </div>
+        <div id="phrasing_hook">
+            <h2>Écoutez, je ne suis pas le type le plus gentil de l’Univers car je suis le plus intelligent.</h2>
+        </div>
+    </header>
+    <div class="page">
+        <!-- chatbot-->
+        <div id="chat_container">
+            <ul>
+                <li class="li_left">
+                    Tu veux aller ou ? Pose ta question petit !
+                    <br>
+                    <img src="/static/img/logor.png" alt="logo" id="Rick">
+                    <br>
+                </li>
+            </ul>
+        </div>
+        <!-- chatbot end-->
+        <form id="text_field">
+            <p>
+                <label for="userText"></label>
+                <input type="text" id="userText" name="userText" placeholder="Poser votre question à GrandPy">
+                <input type="submit" value="Envoyer">
+            </p>
+        </form>
+    </div>
+    <footer>
+        <p>MB
+
+            <a href="">
+                <img alt="lien vers github" src="/static/img/github.png" width="86" height="35" />
+            </a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"
+        integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="/static/js/script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key={{ key }}&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>
