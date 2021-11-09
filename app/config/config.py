@@ -1,7 +1,7 @@
 """Config module, contain all the python constances of the app """
 
 import os
-API_KEY="AIzaSyCnHFjJJv7yn15eds-l40d5_K3UN82oKDo"
+API_KEY=""
 
 GRANDPY_EMPTY = [
     "Je me suis transformé en cornichon. Je suis Rickornichoooon"
