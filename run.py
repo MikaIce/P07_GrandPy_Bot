@@ -1,5 +1,8 @@
-#! /usr/bin/env python3
-from gpbot import app
+""" This module will lauch the app """
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# !/usr/bin/python3
+# -*- coding: Utf-8 -*
+from app import app
+
+if __name__ == '__main__':
+    app.run(debug=False)
