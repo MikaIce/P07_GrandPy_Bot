@@ -1,5 +1,4 @@
 """ This module will lauch the app """
-
 # !/usr/bin/python3
 # -*- coding: Utf-8 -*
 from app import app
