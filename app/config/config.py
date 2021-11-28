@@ -9,7 +9,7 @@ if os.environ.get('DATABASE_URL') is None:
 else:
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 
-API_KEY="AIzaSyCZ1qHAO3OuBQl94hqiyJm8Zj3BunqnarE"
+API_KEY=""
 
 GRANDPY_EMPTY = [
     "Je me suis transformé en cornichon. Je suis Rickornichoooon"
