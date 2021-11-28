@@ -1,2 +1,1 @@
-web: gunicorn Webapp:app
-init: FLASK_APP=run.py flask init_db
+web: flask run --host=0.0.0.0 --port=$PORT

@@ -1,6 +1,14 @@
 """Config module, contain all the python constances of the app """
 
 import os
+
+# Database initialization
+if os.environ.get('DATABASE_URL') is None:
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+else:
+    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+
 API_KEY="AIzaSyCZ1qHAO3OuBQl94hqiyJm8Zj3BunqnarE"
 
 GRANDPY_EMPTY = [
