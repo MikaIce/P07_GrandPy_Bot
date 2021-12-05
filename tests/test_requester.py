@@ -29,7 +29,7 @@ class MockResponse:
                     "pages": {
                         "10052634": {
                             "extract": "a nice short fake text for testing",
-                            "coordinates": [{'lat': 47.74948, 'lon': 7.3399}]}
+                            "coordinates": [{'lat': 4.93461, 'lon': -52.33033}]}
                     },
                 },
             }
@@ -169,4 +169,4 @@ def test_unit_get_wiki_coordinates(monkeypatch):
 
     mock_json = MockResponse("fake valid response").json()
     result = test.get_wiki_coordinates(mock_json)
-    assert result == ('47.74948', '7.3399')
+    assert result == ('4.93461', '-52.33033')

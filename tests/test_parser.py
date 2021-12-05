@@ -46,7 +46,7 @@ def test_unit_lower_letter_method(monkeypatch):
     test_sample = {
         "Hey salut !!!": "hey salut !!!",
         "Ceci, Bonhomme... est un TEst !": "ceci, bonhomme... est un test !",
-        "Test_de_la tour de L'Europe?": "test_de_la tour de l'europe?",
+        "Test_de_cayenne": "test_de_cayenne",
         "Hey, je compte 1,2,3,4,5 etc.": "hey, je compte 1,2,3,4,5 etc."}
 
     for key, value in test_sample.items():

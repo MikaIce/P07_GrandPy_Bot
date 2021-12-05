@@ -10,7 +10,7 @@ def manage_send_answer(user_text):
     globality of the app
     """
 
-    parser = Parser(user_text)
+    parser = app.parser.Parser(user_text)
     result = Request(parser.cleaned)
     answer = result.wiki_result
     lat = result.lat

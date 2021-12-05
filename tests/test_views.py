@@ -28,9 +28,9 @@ class TestViews(TestCase):
 def test_send_answer():
 
     result = manage_send_answer(
-        "Salut grandpy ! je rêve d'aller visiter mulhouse !")
+        "Ou ce trouve Cayenne")
     for element in result['answer']:
-        assert "Mulhouse (/myluz/) est une commune française" in element
+        assert "Cayenne" in element
 
-    assert result['lat'] == '47.749481'
-    assert result['lng'] == '7.33994'
+    assert result['lat'] == '4.93461'
+    assert result['lng'] == '-52.33033'
