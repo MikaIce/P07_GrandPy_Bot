@@ -100,13 +100,13 @@ def test_unit_check_stopwords():
 
     test_parser = parser.Parser()
     test_sample = [
-        ["salut", "Michel"],
-        ["je", "veux", "visiter", "Mulhouse"],
+        ["salut", "Michael"],
+        ["je", "veux", "visiter", "Marseille"],
         ["je", "reve", "aller", "voir", "grande", "pyramide"]
     ]
     expect_results = [
-        ["Michel"],
-        ["Mulhouse"],
+        ["Michael"],
+        ["Marseille"],
         ["grande", "pyramide"]
     ]
     for lists in test_sample:
