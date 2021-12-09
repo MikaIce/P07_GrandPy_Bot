@@ -1,8 +1,17 @@
+
+"""
+    this module will test all the Parser's functions with pytest. The Parser
+    class contain 5 methods what are executing each after other one with the
+    result of the previous one as paramater. So for each test, the next method
+    in the chain will be mocked to break the chain that the test can't stay
+    a unit test.
+    """
 from app import parser
 import string
 
 
 def test_unit_regex_method(monkeypatch):
+    """ Will test the first method regex of the chain """
 
     def mock_init(self, message):
         self.message = message
@@ -31,6 +40,7 @@ def test_unit_regex_method(monkeypatch):
 
 
 def test_unit_lower_letter_method(monkeypatch):
+    """ Will test the second method lower_letter of the chain """
 
     def mock_remove_accent(self, *args, **kwargs):
         pass
@@ -55,6 +65,7 @@ def test_unit_lower_letter_method(monkeypatch):
 
 
 def test_unit_remove_accent_method(monkeypatch):
+    """ Will test the third method remove_accent of the chain """
 
     def mock_split_reworked_message(self, strascii):
         pass
@@ -74,6 +85,7 @@ def test_unit_remove_accent_method(monkeypatch):
 
 
 def test_unit_split_reworked_message_method(monkeypatch):
+    """ Will test the 4th method split_reworked_message of the chain """
 
     def mock_check_stopwords(self, strascii):
         pass
@@ -97,6 +109,7 @@ def test_unit_split_reworked_message_method(monkeypatch):
 
 
 def test_unit_check_stopwords():
+    """ Will test the last method check_stopwords of the chain """
 
     test_parser = parser.Parser()
     test_sample = [

@@ -4,7 +4,10 @@ from tests.service import manage_send_answer
 
 
 class TestViews(TestCase):
-
+    """
+    this class is used for testing the render template method
+    by using library flask testing
+    """
 
     render_templates = False
 
@@ -26,7 +29,11 @@ class TestViews(TestCase):
 
 
 def test_send_answer():
-
+    """
+    this method will test an imitation of the Ajax route method
+    this method is in the service file
+    It globably test that the all back-end is correctly working
+    """
     result = manage_send_answer(
         "Ou ce trouve Cayenne")
     for element in result['answer']:
